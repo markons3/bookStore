@@ -1,0 +1,39 @@
+package com.bookstore.domain;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Book implements Serializable {
+	private static final long serialVersionUID = 4142421L;
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private Long id;
+	
+	private String title;
+	private String author;
+	private String publisher;
+	private String publicationDate;
+	private String language;
+	private String category;
+	private int numberOfpages;
+	private String format;
+	private String isbn;
+	private double shippingWeight;
+	private double listPrice;
+	private double ourPrice;
+	private boolean active = true;
+	
+	@Column(columnDefinition="text")
+	private String description;
+
+	
+	
+
+}

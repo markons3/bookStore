@@ -1,0 +1,11 @@
+package com.bookstore.domain;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Book implements Serializable{
+	private static final long  serialVersionUID=4142421L;
+	
+}

@@ -1,0 +1,5 @@
+package com.bookstore.Service.impl;
+
+public class BookServiceImpl {
+
+}
